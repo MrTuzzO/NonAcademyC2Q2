@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e;
+}
+
+.btn {
+  text-decoration: none;
+  background: #e9dcff;
+  padding: 10px 30px;
+  border-radius: 8px;
+  color: #1e1e1e !important;
+  font-weight: 600;
+  border: 2px solid #fff;
+}
+
+.btn:hover {
+  background: #1e1e1e !important;
+  color: #fff !important;
+  transition: .4s;
+}
+
+.container {
+  max-width: 1000px;
+  width: 90%;
+  margin: auto;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.navbar ul ul {
+  display: flex;
+}
+
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.nav-logo {
+  height: 60px;
+  object-fit: cover;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  /* Added flex-wrap */
+}
+
+.nav-links a {
+  color: #ffffff;
+}
+
+.nav-links a {
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.nav-links a:hover {
+  background: #e9dcff;
+  color: #1e1e1e;
+  transition: .4s;
+}
+
+.hamburger {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 40px;
+}
+
+.banner p {
+  color: #fff;
+  letter-spacing: 4px;
+  font-size: 14px;
+}
+
+.banner h3 {
+  color: #ffffff;
+  font-size: 40px;
+}
+
+.banner-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.banner-left a {
+  width: 80px;
+}
+
+.banner-right img {
+  max-height: 600px;
+}
+
+/* Media query for mobile devices */
+@media only screen and (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-logo {
+    margin-right: auto;
+  }
+
+  .nav-links {
+    flex-wrap: nowrap;
+    margin-left: auto;
+  }
+
+  .nav-links li {
+    margin: 0 10px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+  }
+
+  .nav-links {
+    height: 100vh;
+  }
+
+  .nav-links li {
+    padding: 10px 0;
+  }
+
+  .navbar ul ul {
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
